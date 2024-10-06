@@ -1,0 +1,185 @@
+*{
+    margin: 0;   /* This applies to all elements on the linked page */
+    padding: 0;
+}
+
+.main{
+    width: 100%;
+    background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url(1.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 109vh;
+    position: fixed;
+}
+
+/* .main is a class selector; applies to all html elements with class main
+width is used to set width of the main element 
+background is used to set the background,  here the background colour is used 
+combined with background image. The gradient will overlay on top of the image.
+background size cover ensures that background image covers the entire element
+
+*/
+
+.navbar{
+
+width: 100%;
+height: 75px;
+position: absolute;
+margin-top: 10px;
+margin: auto;
+display: flex;
+justify-content: space-between;
+}
+
+.nav-left{
+    width:80%;
+}
+
+.icon{
+    width: 200px;
+    float: left;
+    height: 70px ;
+}
+
+.logo{
+    color:rgb(107, 199, 199);
+    font-size: 35px;
+    font-family: 'Courier New', Courier, monospace;
+    padding-left: 20px;
+    float: left;
+    padding-top: 10px;
+}
+.menu{
+    width: 900px;
+    float: left;
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+
+}
+/* Flexbox Layout: This property changes the display type of the <ul> from the default block layout to a flex container.
+*/
+ul li{
+    list-style: none;
+    margin-top: 27px;
+    margin-left: 60px;
+    font-size: 14px;
+}
+ul li a{
+    text-decoration: none; /* for removing the underline of hyperlinks */
+    color: rgb(255, 255, 255);
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.4s ease-in-out;
+}
+ul li a:hover{   /* This defines the state of the element when element is hovered*/
+    color: aqua;
+}
+.search{
+    width: 330px;
+    float: right;
+    margin-right: 0px
+}
+
+.srch{
+    font-family: 'Courier New', Courier, monospace;
+    width: 200px;
+    height: 40px;
+    background: transparent;
+    border: 1px solid rgb(255, 255, 255);
+    margin-top: 13px;
+    color: rgb(255, 255, 255);
+    border-right: none;
+    font-size: 16px;
+    float: left;
+    padding: 10px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+
+}
+
+/* top block describes the search input box
+border creates a border around the element in desired properties specified
+border radius are used to round the corners
+*/
+
+.btn{
+    width: 100px;
+    height: 40px;
+    background: rgb(70, 139, 139);
+    border: 2px solid aqua;
+    margin-top: 13px; /*space above element*/
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    font-family: 'Courier New', Courier, monospace;
+    border-bottom-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.btn:focus{
+    outline: none;
+}
+.srch:focus{
+    outline: none;
+}
+/* Only activated when it's in focused stage ie when clicked
+or navigated using keyboard. */
+
+.content{
+    width: 1200px;
+    height: auto;
+    margin: auto;
+    color: rgb(255, 255, 255);
+    position: relative;
+    margin-left: 100px;
+}
+.para{
+    padding-bottom: 25px;
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: 1.2px;
+    line-height: 30px;
+    padding-top: 10px;
+}
+
+.content h1{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 50px;
+    padding-bottom: 20px;
+    margin-top: 15%;
+    letter-spacing: 2px;
+}
+
+.content .cn{
+    width: 160px;
+    height: 40px;
+    background: rgb(70, 139, 139);
+    border: none;
+    margin-top: 30px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    transition: 0.4s ease;
+}
+.content .cn a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    transition: 0.3s ease;
+    font-family: 'Courier New', Courier, monospace;
+}
+.cn:hover{   
+    background-color: rgb(81, 189, 189);
+}
+.climate{
+    color: rgb(83, 225, 225);
+}
